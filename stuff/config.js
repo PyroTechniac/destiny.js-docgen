@@ -3,10 +3,10 @@ const { version, homepage } = require('../package');
 
 module.exports = yargs
     .usage('$0 [command] [options]')
-    .example('$0 --source src --custom docs --output docs/docs.json')
+    .example('$0 --source stuff --custom docs --output docs/docs.json')
     .example('$0 --config docgen.yml', 'Runs the generator using a config file')
     .example('$0 completion', 'Outputs Bash completion script')
-    .epilogue(`discord.js-docgen v${version} by Amish Shah (Hydrabolt) and Schuyler Cebulskie (Gawdl3y): ${homepage}`)
+    .epilogue(`destiny.js-docgen v${version} by Gryffon Bellish: ${homepage}`)
 
     .option('source', {
         type: 'array',
